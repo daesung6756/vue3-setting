@@ -1,5 +1,4 @@
 <template>
-
   <header-wrap />
 
   <main id="main" class="main">
@@ -7,7 +6,6 @@
   </main>
 
   <footer-wrap />
-
 </template>
 
 <script>

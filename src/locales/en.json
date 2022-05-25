@@ -1,9 +1,22 @@
 {
   "gnb": {
-    "home": "Home",
-    "about": "About"
+    "home": {
+      "name": "Home"
+    },
+    "about": {
+      "name": "About"
+    },
+    "menu3": {
+      "name": "Menu3"
+    },
+    "menu4": {
+      "name":"Menu4"
+    }
   },
-  "common": {
-    "h1": "This is { named } page."
+  "title": {
+    "h1": {
+      "home": "This is Main page.",
+      "about": "This is About page."
+    }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <footer id="footer" class="footer">
-    <p></p>
+    <p>{{ t('') }}</p>
   </footer>
 </template>
 

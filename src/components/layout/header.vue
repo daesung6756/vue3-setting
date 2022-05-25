@@ -1,20 +1,20 @@
 <template>
-  <header id="header" class="header" >
+  <header id="header" class="header">
     <gnb-list />
-    <lang-change />
+    <util-list />
   </header>
 </template>
 
 <script>
-import gnbList from '@/components/gnbList.vue';
-import langChange from '@/components/langChange.vue';
+import gnbList from '@/components/gnb-list.vue';
+import UtilList from '@/components/util-list.vue';
 import { useI18n } from 'vue-i18n';
 
 export default {
   name: 'header-wrap',
   components: {
     gnbList,
-    langChange,
+    UtilList,
   },
   data() {
     return {
