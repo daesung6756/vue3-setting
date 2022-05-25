@@ -13,6 +13,6 @@ module.exports = defineConfig({
       fullInstall: true,
     },
   },
-  publicPath: process.env.NODE_ENV === 'production' ? 'https://daesung6756.github.io/vue-build/' : '/vue-build/',
+  publicPath: process.env.NODE_ENV === 'production' ? 'https://daesung6756.github.io/vue3-setting/' : '/vue3-setting/',
   outputDir: './docs',
 });
