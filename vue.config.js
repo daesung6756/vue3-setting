@@ -15,4 +15,7 @@ module.exports = defineConfig({
   },
   publicPath: process.env.NODE_ENV === 'production' ? '/vue3-setting/' : '/',
   outputDir: './docs',
+  devServer: {
+    historyApiFallback: true,
+  },
 });
