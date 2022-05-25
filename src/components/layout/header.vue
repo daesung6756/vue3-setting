@@ -1,43 +1,42 @@
 <template>
-  <header id="header" class="header">
-    <gnb-list :lists="gnbList" />
-    <util-list :lists="utilList" />
+  <header id="header" class="header" >
+    <gnb-list />
+    <lang-change />
   </header>
 </template>
 
 <script>
-import GnbList from "@/components/gnb-list";
-import UtilList from "@/components/util-list";
+import gnbList from '@/components/gnbList.vue';
+import langChange from '@/components/langChange.vue';
+import { useI18n } from 'vue-i18n';
 
 export default {
-  name: "header-wrap",
+  name: 'header-wrap',
   components: {
-    GnbList,
-    UtilList,
+    gnbList,
+    langChange,
   },
   data() {
     return {
-      gnbList: [
-        { name: "Home", src: "/", alt: "" },
-        { name: "About", src: "/about", alt: "" },
-        { name: "menu3", src: "/menu3", alt: "" },
-        { name: "menu4", src: "/menu4", alt: "" },
-        { name: "menu5", src: "/menu5", alt: "" },
-        { name: "menu6", src: "/menu6", alt: "" },
-      ],
-      utilList: [
-        { name: "Login", src: "/login", alt: "", route: true },
-        { name: "Signin", src: "/signin", alt: "", route: true },
-        { name: "Signup", src: "/signup", alt: "", route: false },
-      ],
     };
+  },
+  setup() {
+    const { t } = useI18n({ useScope: 'global' });
+    return { t };
   },
 };
 </script>
 
 <style scoped lang="scss">
 .header {
-  position: relative;
-  padding: 1rem 3rem 1rem 1rem;
+  position:relative;
+  padding:1rem 10rem 1rem 1rem;
+  &.is-fixed {
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.4);
+  }
 }
 </style>

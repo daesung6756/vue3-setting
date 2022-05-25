@@ -1,5 +1,15 @@
 <template>
   <div class="about">
-    <h1>이곳은 about 입니다.</h1>
+    <h1>This is an about page</h1>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'about-page',
+};
+</script>
+
+<style scoped lang="scss">
+
+</style>

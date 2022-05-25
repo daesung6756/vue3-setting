@@ -1,0 +1,9 @@
+{
+  "gnb": {
+    "home": "Home",
+    "about": "About"
+  },
+  "common": {
+    "h1": "This is { named } page."
+  }
+}
