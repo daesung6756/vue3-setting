@@ -4,13 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development vue-cli-service serve",
-    "dist": "cross-env NODE_ENV=development vue-cli-service build",
-    "dist:pro": "cross-env NODE_ENV=production vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\"",
-    "predeploy": "cross-env NODE_ENV=production vue-cli-service build",
-    "deploy": "gh-pages -d dist",
-    "clean": "gh-pages-clean"
+    "build": "cross-env NODE_ENV=development vue-cli-service build",
+    "build:prd": "cross-env NODE_ENV=production vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.8.3",
