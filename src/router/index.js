@@ -7,12 +7,11 @@ const Test2 = () => import('../views/About.vue');
 const fileNotFound = () => import('../views/fileNotFound.vue');
 
 const routes = [
-  { path: '*', redirect: '/fileNotFound' },
   { path: '/', name: 'home', component: Home },
   { path: '/about', name: 'about', component: About },
   { path: '/test1', name: 'test1', component: Test1 },
   { path: '/test2', name: 'test2', component: Test2 },
-  { path: '/fileNotFound', name: 'fileNotFound', component: fileNotFound },
+  { path: '/:pathMatch(.*)*', component: fileNotFound },
 ];
 
 const router = createRouter({
