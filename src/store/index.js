@@ -1,10 +1,10 @@
 import { createStore } from 'vuex';
 
-const { state } = require('./state/index');
-const { getters } = require('./getters/index');
-const { mutations } = require('./mutations/index');
-const { actions } = require('./actions/index');
-const { modules } = require('./modules/index');
+import state from './state/index';
+import getters from './getters/index';
+import mutations from './mutations/index';
+import actions from './actions/index';
+import modules from './modules/index';
 
 export default createStore({
   state,

@@ -2,4 +2,4 @@ const modules = {
 
 };
 
-export { modules };
+export default modules;
