@@ -1,5 +1,5 @@
-export const mutations = {
+const mutations = {
 
 };
 
-exports.mutations = mutations;
+export { mutations };

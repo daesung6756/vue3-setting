@@ -5,12 +5,11 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles for development ( web-server )
 ```
 npm run dev
 ```
-
-### Compiles and minifies for  development
+### Compiles for development
 ```
 npm run build
 ```

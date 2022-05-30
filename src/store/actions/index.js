@@ -1,5 +1,5 @@
-export const actions = {
+const actions = {
 
 };
 
-exports.actions = actions;
+export{ actions };

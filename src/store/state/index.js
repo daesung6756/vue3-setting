@@ -1,5 +1,5 @@
-export const state = {
+const state = {
 
 };
 
-exports.state = state;
+export { state };

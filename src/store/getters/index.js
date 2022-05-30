@@ -1,5 +1,5 @@
-export const getters = {
+const getters = {
 
 };
 
-exports.getters = getters;
+export{ getters };

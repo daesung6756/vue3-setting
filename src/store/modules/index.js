@@ -1,5 +1,5 @@
-export const modules = {
+const modules = {
 
 };
 
-exports.modules = modules;
+export { modules };
