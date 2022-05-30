@@ -7,7 +7,7 @@ const Test2 = () => import('../views/About.vue');
 const fileNotFound = () => import('../views/fileNotFound.vue');
 
 const routes = [
-  { path: '/:pathMatch(.*)*', redirect: '/fileNotFound' },
+  { path: '*', redirect: '/fileNotFound' },
   { path: '/', name: 'home', component: Home },
   { path: '/about', name: 'about', component: About },
   { path: '/test1', name: 'test1', component: Test1 },
