@@ -10,11 +10,14 @@ npm install
 npm run dev
 ```
 
-### Compiles and minifies for production
+### Compiles and minifies for  development
 ```
 npm run build
 ```
-
+### Compiles and minifies for production
+```
+npm run build:prd
+```
 ### Lints and fixes files
 ```
 npm run lint
