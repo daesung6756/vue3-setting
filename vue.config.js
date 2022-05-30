@@ -1,6 +1,5 @@
 const { defineConfig } = require('@vue/cli-service');
 const path = require('path');
-const config = require('webpack-chain');
 
 module.exports = defineConfig({
   transpileDependencies: true,
@@ -30,8 +29,5 @@ module.exports = defineConfig({
       title: 'Index page',
       chunks: ['chunk-vendors', 'chunk-common', 'index'],
     },
-  },
-  configureWebpack: {
-
   },
 });
