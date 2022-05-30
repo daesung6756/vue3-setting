@@ -21,10 +21,6 @@ module.exports = defineConfig({
   assetsDir: './assets',
   devServer: {
     historyApiFallback: true,
-    overlay: {
-      warnings: true,
-      errors: true,
-    },
   },
   pages: {
     index: {
