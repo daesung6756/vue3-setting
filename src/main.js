@@ -8,5 +8,8 @@ import '@/assets/scss/reset.scss';
 import '@/assets/scss/layout.scss';
 import '@/assets/scss/common.scss';
 
-createApp(App).use(i18n).use(store).use(router)
+createApp(App)
+  .use(i18n)
+  .use(store)
+  .use(router)
   .mount('#app');
